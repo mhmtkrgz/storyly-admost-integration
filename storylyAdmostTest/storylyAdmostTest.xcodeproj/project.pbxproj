@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E8453BE24869CDF00079600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453BD24869CDF00079600 /* AppDelegate.m */; };
+		9E8453C124869CDF00079600 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453C024869CDF00079600 /* SceneDelegate.m */; };
+		9E8453C424869CDF00079600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453C324869CDF00079600 /* ViewController.m */; };
+		9E8453C724869CDF00079600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453C524869CDF00079600 /* Main.storyboard */; };
+		9E8453C924869CE100079600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453C824869CE100079600 /* Assets.xcassets */; };
+		9E8453CC24869CE100079600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453CA24869CE100079600 /* LaunchScreen.storyboard */; };
+		9E8453CF24869CE100079600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453CE24869CE100079600 /* main.m */; };
+		9E8453D824869D1000079600 /* AMRResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453D624869D1000079600 /* AMRResources.bundle */; };
+		9E8453D924869D1000079600 /* AMRSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453D724869D1000079600 /* AMRSDK.framework */; };
+		9E8453DF24869D2500079600 /* AMRAdapterAdmostResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453DC24869D2500079600 /* AMRAdapterAdmostResources.bundle */; };
+		9E8453E024869D2500079600 /* libAMRAdapterAdmost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453DD24869D2500079600 /* libAMRAdapterAdmost.a */; };
+		9E8453E124869D2500079600 /* AMRAdmostSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453DE24869D2500079600 /* AMRAdmostSDK.framework */; };
+		9E8453E324869D5000079600 /* KKLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453E224869D5000079600 /* KKLog.framework */; };
+		9E8453E624869D7000079600 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453E524869D7000079600 /* VideoToolbox.framework */; };
+		9E8453E824869D7500079600 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453E724869D7500079600 /* WebKit.framework */; };
+		9E8453EA24869D7E00079600 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453E924869D7E00079600 /* SystemConfiguration.framework */; };
+		9E8453EC24869D8800079600 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453EB24869D8800079600 /* StoreKit.framework */; };
+		9E8453EE24869D8E00079600 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453ED24869D8E00079600 /* Social.framework */; };
+		9E8453F024869D9700079600 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453EF24869D9700079600 /* Security.framework */; };
+		9E8453F224869D9B00079600 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F124869D9B00079600 /* SafariServices.framework */; };
+		9E8453F424869DA200079600 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F324869DA200079600 /* UIKit.framework */; };
+		9E8453F624869DB500079600 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F524869DB400079600 /* AdSupport.framework */; };
+		9E8453F824869DB900079600 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F724869DB900079600 /* QuartzCore.framework */; };
+		9E8453FA24869DC300079600 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F924869DC300079600 /* CoreGraphics.framework */; };
+		9E8453FC24869DC800079600 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453FB24869DC800079600 /* CoreImage.framework */; };
+		9E8453FE24869F6B00079600 /* StorlyCustomBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453FD24869F6B00079600 /* StorlyCustomBanner.xib */; };
+		9E8454032486A45D00079600 /* random-grey-variations.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454002486A45D00079600 /* random-grey-variations.png */; };
+		9E8454042486A45D00079600 /* amr-adchoices.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454012486A45D00079600 /* amr-adchoices.png */; };
+		9E8454052486A45D00079600 /* native_int_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454022486A45D00079600 /* native_int_close.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E8453B924869CDF00079600 /* storylyAdmostTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storylyAdmostTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8453BC24869CDF00079600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E8453BD24869CDF00079600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E8453BF24869CDF00079600 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9E8453C024869CDF00079600 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9E8453C224869CDF00079600 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9E8453C324869CDF00079600 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9E8453C624869CDF00079600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E8453C824869CE100079600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E8453CB24869CE100079600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E8453CD24869CE100079600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8453CE24869CE100079600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E8453D624869D1000079600 /* AMRResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMRResources.bundle; sourceTree = "<group>"; };
+		9E8453D724869D1000079600 /* AMRSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMRSDK.framework; sourceTree = "<group>"; };
+		9E8453DC24869D2500079600 /* AMRAdapterAdmostResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMRAdapterAdmostResources.bundle; sourceTree = "<group>"; };
+		9E8453DD24869D2500079600 /* libAMRAdapterAdmost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMRAdapterAdmost.a; sourceTree = "<group>"; };
+		9E8453DE24869D2500079600 /* AMRAdmostSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMRAdmostSDK.framework; sourceTree = "<group>"; };
+		9E8453E224869D5000079600 /* KKLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KKLog.framework; sourceTree = "<group>"; };
+		9E8453E524869D7000079600 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		9E8453E724869D7500079600 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9E8453E924869D7E00079600 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9E8453EB24869D8800079600 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9E8453ED24869D8E00079600 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9E8453EF24869D9700079600 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9E8453F124869D9B00079600 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		9E8453F324869DA200079600 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E8453F524869DB400079600 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9E8453F724869DB900079600 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9E8453F924869DC300079600 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E8453FB24869DC800079600 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9E8453FD24869F6B00079600 /* StorlyCustomBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StorlyCustomBanner.xib; sourceTree = "<group>"; };
+		9E8454002486A45D00079600 /* random-grey-variations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "random-grey-variations.png"; sourceTree = "<group>"; };
+		9E8454012486A45D00079600 /* amr-adchoices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amr-adchoices.png"; sourceTree = "<group>"; };
+		9E8454022486A45D00079600 /* native_int_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = native_int_close.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E8453B624869CDF00079600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8453E024869D2500079600 /* libAMRAdapterAdmost.a in Frameworks */,
+				9E8453F424869DA200079600 /* UIKit.framework in Frameworks */,
+				9E8453F824869DB900079600 /* QuartzCore.framework in Frameworks */,
+				9E8453FA24869DC300079600 /* CoreGraphics.framework in Frameworks */,
+				9E8453EA24869D7E00079600 /* SystemConfiguration.framework in Frameworks */,
+				9E8453E124869D2500079600 /* AMRAdmostSDK.framework in Frameworks */,
+				9E8453EC24869D8800079600 /* StoreKit.framework in Frameworks */,
+				9E8453E824869D7500079600 /* WebKit.framework in Frameworks */,
+				9E8453F624869DB500079600 /* AdSupport.framework in Frameworks */,
+				9E8453E624869D7000079600 /* VideoToolbox.framework in Frameworks */,
+				9E8453F024869D9700079600 /* Security.framework in Frameworks */,
+				9E8453FC24869DC800079600 /* CoreImage.framework in Frameworks */,
+				9E8453EE24869D8E00079600 /* Social.framework in Frameworks */,
+				9E8453D924869D1000079600 /* AMRSDK.framework in Frameworks */,
+				9E8453E324869D5000079600 /* KKLog.framework in Frameworks */,
+				9E8453F224869D9B00079600 /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E8453B024869CDF00079600 = {
+			isa = PBXGroup;
+			children = (
+				9E8453BB24869CDF00079600 /* storylyAdmostTest */,
+				9E8453BA24869CDF00079600 /* Products */,
+				9E8453E424869D7000079600 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E8453BA24869CDF00079600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E8453B924869CDF00079600 /* storylyAdmostTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E8453BB24869CDF00079600 /* storylyAdmostTest */ = {
+			isa = PBXGroup;
+			children = (
+				9E8453D524869CFA00079600 /* AMR */,
+				9E8453FF2486A25800079600 /* AMRBannerAssets */,
+				9E8453BC24869CDF00079600 /* AppDelegate.h */,
+				9E8453BD24869CDF00079600 /* AppDelegate.m */,
+				9E8453BF24869CDF00079600 /* SceneDelegate.h */,
+				9E8453C024869CDF00079600 /* SceneDelegate.m */,
+				9E8453C224869CDF00079600 /* ViewController.h */,
+				9E8453C324869CDF00079600 /* ViewController.m */,
+				9E8453C524869CDF00079600 /* Main.storyboard */,
+				9E8453C824869CE100079600 /* Assets.xcassets */,
+				9E8453CA24869CE100079600 /* LaunchScreen.storyboard */,
+				9E8453CD24869CE100079600 /* Info.plist */,
+				9E8453CE24869CE100079600 /* main.m */,
+			);
+			path = storylyAdmostTest;
+			sourceTree = "<group>";
+		};
+		9E8453D524869CFA00079600 /* AMR */ = {
+			isa = PBXGroup;
+			children = (
+				9E8453E224869D5000079600 /* KKLog.framework */,
+				9E8453DA24869D2500079600 /* AMRAdapterAdmost */,
+				9E8453DE24869D2500079600 /* AMRAdmostSDK.framework */,
+				9E8453D624869D1000079600 /* AMRResources.bundle */,
+				9E8453D724869D1000079600 /* AMRSDK.framework */,
+			);
+			path = AMR;
+			sourceTree = "<group>";
+		};
+		9E8453DA24869D2500079600 /* AMRAdapterAdmost */ = {
+			isa = PBXGroup;
+			children = (
+				9E8453DB24869D2500079600 /* AMRAdapterAdmostInclude */,
+				9E8453DD24869D2500079600 /* libAMRAdapterAdmost.a */,
+			);
+			path = AMRAdapterAdmost;
+			sourceTree = "<group>";
+		};
+		9E8453DB24869D2500079600 /* AMRAdapterAdmostInclude */ = {
+			isa = PBXGroup;
+			children = (
+				9E8453DC24869D2500079600 /* AMRAdapterAdmostResources.bundle */,
+			);
+			path = AMRAdapterAdmostInclude;
+			sourceTree = "<group>";
+		};
+		9E8453E424869D7000079600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E8453FB24869DC800079600 /* CoreImage.framework */,
+				9E8453F924869DC300079600 /* CoreGraphics.framework */,
+				9E8453F724869DB900079600 /* QuartzCore.framework */,
+				9E8453F524869DB400079600 /* AdSupport.framework */,
+				9E8453F324869DA200079600 /* UIKit.framework */,
+				9E8453F124869D9B00079600 /* SafariServices.framework */,
+				9E8453EF24869D9700079600 /* Security.framework */,
+				9E8453ED24869D8E00079600 /* Social.framework */,
+				9E8453EB24869D8800079600 /* StoreKit.framework */,
+				9E8453E924869D7E00079600 /* SystemConfiguration.framework */,
+				9E8453E724869D7500079600 /* WebKit.framework */,
+				9E8453E524869D7000079600 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E8453FF2486A25800079600 /* AMRBannerAssets */ = {
+			isa = PBXGroup;
+			children = (
+				9E8454012486A45D00079600 /* amr-adchoices.png */,
+				9E8454022486A45D00079600 /* native_int_close.png */,
+				9E8454002486A45D00079600 /* random-grey-variations.png */,
+				9E8453FD24869F6B00079600 /* StorlyCustomBanner.xib */,
+			);
+			path = AMRBannerAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E8453B824869CDF00079600 /* storylyAdmostTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8453D224869CE100079600 /* Build configuration list for PBXNativeTarget "storylyAdmostTest" */;
+			buildPhases = (
+				9E8453B524869CDF00079600 /* Sources */,
+				9E8453B624869CDF00079600 /* Frameworks */,
+				9E8453B724869CDF00079600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = storylyAdmostTest;
+			productName = storylyAdmostTest;
+			productReference = 9E8453B924869CDF00079600 /* storylyAdmostTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E8453B124869CDF00079600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Kokteyl;
+				TargetAttributes = {
+					9E8453B824869CDF00079600 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 9E8453B424869CDF00079600 /* Build configuration list for PBXProject "storylyAdmostTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E8453B024869CDF00079600;
+			productRefGroup = 9E8453BA24869CDF00079600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E8453B824869CDF00079600 /* storylyAdmostTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E8453B724869CDF00079600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8453FE24869F6B00079600 /* StorlyCustomBanner.xib in Resources */,
+				9E8453DF24869D2500079600 /* AMRAdapterAdmostResources.bundle in Resources */,
+				9E8454052486A45D00079600 /* native_int_close.png in Resources */,
+				9E8453CC24869CE100079600 /* LaunchScreen.storyboard in Resources */,
+				9E8453C924869CE100079600 /* Assets.xcassets in Resources */,
+				9E8454042486A45D00079600 /* amr-adchoices.png in Resources */,
+				9E8453D824869D1000079600 /* AMRResources.bundle in Resources */,
+				9E8453C724869CDF00079600 /* Main.storyboard in Resources */,
+				9E8454032486A45D00079600 /* random-grey-variations.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E8453B524869CDF00079600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8453C424869CDF00079600 /* ViewController.m in Sources */,
+				9E8453BE24869CDF00079600 /* AppDelegate.m in Sources */,
+				9E8453CF24869CE100079600 /* main.m in Sources */,
+				9E8453C124869CDF00079600 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E8453C524869CDF00079600 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E8453C624869CDF00079600 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E8453CA24869CE100079600 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E8453CB24869CE100079600 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E8453D024869CE100079600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E8453D124869CE100079600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E8453D324869CE100079600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AUH76QNW9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/storylyAdmostTest/AMR",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = storylyAdmostTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/storylyAdmostTest/AMR/AMRAdapterAdmost",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.storylyAdmostTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E8453D424869CE100079600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AUH76QNW9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/storylyAdmostTest/AMR",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = storylyAdmostTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/storylyAdmostTest/AMR/AMRAdapterAdmost",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokteyl.storylyAdmostTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E8453B424869CDF00079600 /* Build configuration list for PBXProject "storylyAdmostTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8453D024869CE100079600 /* Debug */,
+				9E8453D124869CE100079600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E8453D224869CE100079600 /* Build configuration list for PBXNativeTarget "storylyAdmostTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8453D324869CE100079600 /* Debug */,
+				9E8453D424869CE100079600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E8453B124869CDF00079600 /* Project object */;
+}
