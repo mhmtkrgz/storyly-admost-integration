@@ -24,45 +24,45 @@
 #pragma mark - <StorylyExternalView>
 
 - (NSInteger)getDuration {
-    return 5000;
+    return _banner ? _banner.bannerView.customNativeBannerDuration : 0;
 }
 
-- (NSURL * _Nonnull)getIcon {
-    return [NSURL URLWithString:@"http://127.0.0.1:8000/nigdedeyiz.jpg"];
+- (NSURL *)getIcon {
+    return _banner ? _banner.bannerView.customNativeBannerIconURL : nil;
 }
 
-- (NSString * _Nonnull)getTitle {
-    return @"AdMost Monetization";
+- (NSString *)getTitle {
+    return _banner ? _banner.bannerView.customNativeBannerHeaderText : @"";
 }
 
 - (void)destroy {
-    
+    ;;
 }
-
 - (void)load {
-    
+    ;;
 }
 
 - (void)pause {
-    
+    [_banner pauseForCustomNativeBanner];
 }
 
 - (void)redirect {
-    
+    [_banner triggerCallToActionForCustomNativeBanner];
 }
 
 - (void)reset {
-    
+//    [_banner playForCustomNativeBanner];
 }
 
 - (void)resume {
-    
+//    [_banner playForCustomNativeBanner];
 }
 
 #pragma mark - <AMRBannerDelegate>
 
 - (void)didReceiveBanner:(AMRBanner *)banner {
-    NSLog(@"Banner duration: %@", @(banner.customNativeDuration));
+    NSLog(@"Banner duration: %@", @(banner.bannerView.customNativeBannerDuration));
+    
     [self addSubview:banner.bannerView];
     if (self.externalViewListener != nil) {
         [self.externalViewListener onLoad:self];

@@ -144,14 +144,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setUserId:(NSString *)userId;
 
 /**
- * You can optionally provide Adjust unique user id for reporting purposes.
- * Example usage:
- * @code
- * [AMRSDK setAdjustUserId:@"myUniqueAdjustUserId"];
- * @endcode
- * @param adjustUserId unique Adjust id.
- */
-+ (void)setAdjustUserId:(NSString *)adjustUserId;
+* @deprecated This method is deprecated starting in version 1.3.35
+* @note AMRSDK gets AdjustUserId automatically.
+*/
++ (void)setAdjustUserId:(NSString *)adjustUserId __attribute__((deprecated));
 
 /**
  * You can optionally provide a campaign id.

@@ -47,7 +47,7 @@
 #pragma mark - <AMRBannerDelegate>
 
 - (void)didReceiveBanner:(AMRBanner *)banner {
-    NSLog(@"Banner duration: %@", @(banner.customNativeDuration));
+    NSLog(@"Banner duration: %@", @(banner.bannerView.customNativeBannerDuration));
     
     [self.VBannerContainer addSubview:banner.bannerView];
 }

@@ -12,4 +12,10 @@
 
 @interface AMRBannerView : UIView
 @property AMRPlacement *placement;
+
+@property NSURL *customNativeBannerIconURL;
+@property NSString *customNativeBannerDetailText;
+@property NSString *customNativeBannerHeaderText;
+@property NSString *customNativeBannerCtaText;
+@property NSInteger customNativeBannerDuration;
 @end

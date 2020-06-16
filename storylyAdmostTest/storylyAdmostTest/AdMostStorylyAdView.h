@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AdMostStorylyAdView : UIView<StorylyExternalView, AMRBannerDelegate>
 
-@property (weak, nonatomic) id<StorylyExternalViewListener> externalViewListener;
+@property (nonatomic, strong) id<StorylyExternalViewListener> externalViewListener;
 
 -(void)loadAd;
 

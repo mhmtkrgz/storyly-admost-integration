@@ -24,8 +24,6 @@
 @property (nonatomic) CGSize customNativeSize;
 /// Custom native ad xib name
 @property NSString *customeNativeXibName;
-/// Custom native ad duration in seconds
-@property (nonatomic, readonly) NSInteger customNativeDuration;
 
 /**
  * Create an instance of AMRBanner to show in your application.
