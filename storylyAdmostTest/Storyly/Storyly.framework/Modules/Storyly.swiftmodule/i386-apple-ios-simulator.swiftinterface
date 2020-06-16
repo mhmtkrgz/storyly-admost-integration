@@ -1,0 +1,155 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
+// swift-module-flags: -target i386-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Storyly
+import AVFoundation
+import AVKit
+import AdSupport
+import CoreLocation
+import CoreTelephony
+import SDWebImage
+@_exported import Storyly
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+@objc(StorylyView) public class StorylyView : UIKit.UIView {
+  @objc public var storylyInit: Storyly.StorylyInit {
+    @objc get
+    @objc set
+  }
+  @objc weak public var rootViewController: UIKit.UIViewController?
+  @objc weak public var delegate: Storyly.StorylyDelegate?
+  @objc weak public var storylyExternalViewProvider: Storyly.StorylyExternalViewProvider?
+  @objc public var storyGroupIconBorderColorSeen: [UIKit.UIColor] {
+    @objc get
+    @objc set
+  }
+  @objc public var storyGroupIconBorderColorNotSeen: [UIKit.UIColor] {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var storyGroupIconBackgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var storyGroupTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var storyGroupPinIconColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var storyItemIconBorderColor: [UIKit.UIColor] {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var storyItemTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var storylyItemProgressBarColor: [UIKit.UIColor] {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var storyGroupSize: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension StorylyView {
+  @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+}
+extension StorylyView {
+  @objc dynamic public func refresh()
+  @objc dynamic public func openStory(payload: Foundation.URL) -> Swift.Bool
+  @objc dynamic public func pause()
+  @objc dynamic public func resume()
+  @objc dynamic public func dismiss(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc dynamic public func present(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  public func setExternalData(externalData: [[Swift.String : Any?]]?) -> Swift.Bool
+  @objc(setExternalData:) dynamic public func setExternalData(externalData: [Foundation.NSDictionary]?) -> Swift.Bool
+}
+@objc public protocol StorylyExternalViewProvider : AnyObject {
+  @objc(onRequest:) func onRequest(externalViewListener: Storyly.StorylyExternalViewListener)
+}
+@objc public protocol StorylyExternalViewListener : AnyObject {
+  @objc(onLoad:) func onLoad(externalView: Storyly.StorylyExternalView)
+}
+@objc public protocol StorylyExternalView : UIKit.UIView {
+  @objc func getDuration() -> Swift.Int
+  @objc func getIcon() -> Foundation.URL
+  @objc func getTitle() -> Swift.String
+  @objc func destroy()
+  @objc func load()
+  @objc func pause()
+  @objc func redirect()
+  @objc func reset()
+  @objc func resume()
+}
+@objc public protocol StorylyDelegate : AnyObject {
+  @objc optional func storylyLoaded(_ storylyView: Storyly.StorylyView, storyGroupList: [Storyly.StoryGroup])
+  @objc optional func storylyLoadFailed(_ storylyView: Storyly.StorylyView, errorMessage: Swift.String)
+  @objc optional func storylyActionClicked(_ storylyView: Storyly.StorylyView, rootViewController: UIKit.UIViewController, story: Storyly.Story) -> Swift.Bool
+  @objc optional func storylyStoryPresented(_ storylyView: Storyly.StorylyView)
+  @objc optional func storylyStoryDismissed(_ storylyView: Storyly.StorylyView)
+}
+@objc public class StorylyInit : ObjectiveC.NSObject {
+  @objc convenience public init(storylyId: Swift.String)
+  @objc public init(storylyId: Swift.String, segmentation: Storyly.StorylySegmentation)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class StorylySegmentation : ObjectiveC.NSObject {
+  @objc convenience public init(segments: Swift.Set<Swift.String>?)
+  @objc public init(segments: Swift.Set<Swift.String>?, isDynamicSegmentationEnabled: Swift.Bool, dynamicSegmentationCallback: Storyly.StorylyDynamicSegmentationCallback?)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol StorylyDynamicSegmentationCallback : AnyObject {
+  @objc func filter(storylyGroupItemSegments: Swift.Set<Swift.String>?, segments: Swift.Set<Swift.String>?) -> Swift.Bool
+}
+@objc public enum StoryType : Swift.Int {
+  case Unknown
+  case Image
+  case Video
+  case Html
+  case Native
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class StoryGroup : ObjectiveC.NSObject {
+  @objc final public let index: Swift.Int
+  @objc final public let title: Swift.String
+  @objc final public let stories: [Storyly.Story]
+  @objc public init(index: Swift.Int, title: Swift.String, stories: [Storyly.Story])
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc final public class Story : ObjectiveC.NSObject {
+  @objc final public let index: Swift.Int
+  @objc final public let title: Swift.String
+  @objc final public let media: Storyly.StoryMedia
+  @objc public init(index: Swift.Int, title: Swift.String, media: Storyly.StoryMedia)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc final public class StoryMedia : ObjectiveC.NSObject {
+  @objc final public let type: Storyly.StoryType
+  @objc final public let url: Swift.String
+  @objc final public var actionUrl: Swift.String? {
+    @objc get
+  }
+  @objc public init(type: Storyly.StoryType, url: Swift.String, actionUrl: Swift.String?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Storyly.StoryType : Swift.Equatable {}
+extension Storyly.StoryType : Swift.Hashable {}
+extension Storyly.StoryType : Swift.RawRepresentable {}
