@@ -1,0 +1,22 @@
+PODS:
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - Storyly (1.3.2):
+    - SDWebImage
+
+DEPENDENCIES:
+  - Storyly
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - Storyly
+
+SPEC CHECKSUMS:
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  Storyly: 6cbbb85bbafb9048c2a91532d07e46e7947d8f7e
+
+PODFILE CHECKSUM: 5f8bc23c66687ae941982e7104ef51a6b89dbe16
+
+COCOAPODS: 1.9.1

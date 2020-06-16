@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JOY-Vv-PEz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -75,6 +76,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="113.83928571428571"/>
+        </scene>
+        <!--Storyly View Controller-->
+        <scene sceneID="AyM-eK-A1h">
+            <objects>
+                <viewController id="JOY-Vv-PEz" customClass="StorylyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZt-1h-mKv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTX-Bz-3p1" customClass="StorylyView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="FP8-d0-ewM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WTX-Bz-3p1" firstAttribute="leading" secondItem="RJK-wU-9uv" secondAttribute="leading" id="XSM-Ac-IRJ"/>
+                            <constraint firstItem="WTX-Bz-3p1" firstAttribute="top" secondItem="RJK-wU-9uv" secondAttribute="top" id="bIs-Xz-Eu5"/>
+                            <constraint firstItem="RJK-wU-9uv" firstAttribute="trailing" secondItem="WTX-Bz-3p1" secondAttribute="trailing" id="sfM-K8-ecW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RJK-wU-9uv"/>
+                    </view>
+                    <connections>
+                        <outlet property="storylyView" destination="WTX-Bz-3p1" id="KHA-tj-poS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5G-Pu-Iv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="114"/>
         </scene>
     </scenes>
 </document>

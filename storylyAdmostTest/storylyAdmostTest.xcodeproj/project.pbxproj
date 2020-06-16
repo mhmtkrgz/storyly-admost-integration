@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4182653A2497A65800EEA99A /* StorylyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418265392497A65800EEA99A /* StorylyViewController.m */; };
+		418265402497E45300EEA99A /* AdMostStorylyAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4182653F2497E45300EEA99A /* AdMostStorylyAdView.m */; };
 		9E8453BE24869CDF00079600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453BD24869CDF00079600 /* AppDelegate.m */; };
 		9E8453C124869CDF00079600 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453C024869CDF00079600 /* SceneDelegate.m */; };
 		9E8453C424869CDF00079600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453C324869CDF00079600 /* ViewController.m */; };
@@ -36,9 +38,16 @@
 		9E8454032486A45D00079600 /* random-grey-variations.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454002486A45D00079600 /* random-grey-variations.png */; };
 		9E8454042486A45D00079600 /* amr-adchoices.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454012486A45D00079600 /* amr-adchoices.png */; };
 		9E8454052486A45D00079600 /* native_int_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454022486A45D00079600 /* native_int_close.png */; };
+		F71DDCBC2CBAE81462346BAC /* Pods_storylyAdmostTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A35920BDDA365EF74F5332 /* Pods_storylyAdmostTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		418265382497A65800EEA99A /* StorylyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorylyViewController.h; sourceTree = "<group>"; };
+		418265392497A65800EEA99A /* StorylyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorylyViewController.m; sourceTree = "<group>"; };
+		4182653E2497E45300EEA99A /* AdMostStorylyAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdMostStorylyAdView.h; sourceTree = "<group>"; };
+		4182653F2497E45300EEA99A /* AdMostStorylyAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdMostStorylyAdView.m; sourceTree = "<group>"; };
+		5DFDC5C5023525F6F73EED57 /* Pods-storylyAdmostTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storylyAdmostTest.release.xcconfig"; path = "Target Support Files/Pods-storylyAdmostTest/Pods-storylyAdmostTest.release.xcconfig"; sourceTree = "<group>"; };
+		70769D801AFB08D81A4883B8 /* Pods-storylyAdmostTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storylyAdmostTest.debug.xcconfig"; path = "Target Support Files/Pods-storylyAdmostTest/Pods-storylyAdmostTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9E8453B924869CDF00079600 /* storylyAdmostTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storylyAdmostTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8453BC24869CDF00079600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E8453BD24869CDF00079600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +82,7 @@
 		9E8454002486A45D00079600 /* random-grey-variations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "random-grey-variations.png"; sourceTree = "<group>"; };
 		9E8454012486A45D00079600 /* amr-adchoices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amr-adchoices.png"; sourceTree = "<group>"; };
 		9E8454022486A45D00079600 /* native_int_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = native_int_close.png; sourceTree = "<group>"; };
+		F5A35920BDDA365EF74F5332 /* Pods_storylyAdmostTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_storylyAdmostTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,18 +106,29 @@
 				9E8453D924869D1000079600 /* AMRSDK.framework in Frameworks */,
 				9E8453E324869D5000079600 /* KKLog.framework in Frameworks */,
 				9E8453F224869D9B00079600 /* SafariServices.framework in Frameworks */,
+				F71DDCBC2CBAE81462346BAC /* Pods_storylyAdmostTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1225FBB74FFC20889BDAB8B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70769D801AFB08D81A4883B8 /* Pods-storylyAdmostTest.debug.xcconfig */,
+				5DFDC5C5023525F6F73EED57 /* Pods-storylyAdmostTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9E8453B024869CDF00079600 = {
 			isa = PBXGroup;
 			children = (
 				9E8453BB24869CDF00079600 /* storylyAdmostTest */,
 				9E8453BA24869CDF00079600 /* Products */,
 				9E8453E424869D7000079600 /* Frameworks */,
+				1225FBB74FFC20889BDAB8B0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,11 +151,15 @@
 				9E8453C024869CDF00079600 /* SceneDelegate.m */,
 				9E8453C224869CDF00079600 /* ViewController.h */,
 				9E8453C324869CDF00079600 /* ViewController.m */,
+				418265382497A65800EEA99A /* StorylyViewController.h */,
+				418265392497A65800EEA99A /* StorylyViewController.m */,
 				9E8453C524869CDF00079600 /* Main.storyboard */,
 				9E8453C824869CE100079600 /* Assets.xcassets */,
 				9E8453CA24869CE100079600 /* LaunchScreen.storyboard */,
 				9E8453CD24869CE100079600 /* Info.plist */,
 				9E8453CE24869CE100079600 /* main.m */,
+				4182653E2497E45300EEA99A /* AdMostStorylyAdView.h */,
+				4182653F2497E45300EEA99A /* AdMostStorylyAdView.m */,
 			);
 			path = storylyAdmostTest;
 			sourceTree = "<group>";
@@ -183,6 +208,7 @@
 				9E8453E924869D7E00079600 /* SystemConfiguration.framework */,
 				9E8453E724869D7500079600 /* WebKit.framework */,
 				9E8453E524869D7000079600 /* VideoToolbox.framework */,
+				F5A35920BDDA365EF74F5332 /* Pods_storylyAdmostTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E8453D224869CE100079600 /* Build configuration list for PBXNativeTarget "storylyAdmostTest" */;
 			buildPhases = (
+				26755151C0377A5C781FCF6A /* [CP] Check Pods Manifest.lock */,
 				9E8453B524869CDF00079600 /* Sources */,
 				9E8453B624869CDF00079600 /* Frameworks */,
 				9E8453B724869CDF00079600 /* Resources */,
+				3A59F263D86FA43C5DF0C724 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,13 +297,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26755151C0377A5C781FCF6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-storylyAdmostTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A59F263D86FA43C5DF0C724 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-storylyAdmostTest/Pods-storylyAdmostTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-storylyAdmostTest/Pods-storylyAdmostTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-storylyAdmostTest/Pods-storylyAdmostTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E8453B524869CDF00079600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9E8453C424869CDF00079600 /* ViewController.m in Sources */,
+				418265402497E45300EEA99A /* AdMostStorylyAdView.m in Sources */,
 				9E8453BE24869CDF00079600 /* AppDelegate.m in Sources */,
+				4182653A2497A65800EEA99A /* StorylyViewController.m in Sources */,
 				9E8453CF24869CE100079600 /* main.m in Sources */,
 				9E8453C124869CDF00079600 /* SceneDelegate.m in Sources */,
 			);
@@ -415,6 +487,7 @@
 		};
 		9E8453D324869CE100079600 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70769D801AFB08D81A4883B8 /* Pods-storylyAdmostTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,7 +498,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = storylyAdmostTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +520,7 @@
 		};
 		9E8453D424869CE100079600 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFDC5C5023525F6F73EED57 /* Pods-storylyAdmostTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,7 +531,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = storylyAdmostTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
