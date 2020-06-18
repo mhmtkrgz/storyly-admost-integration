@@ -24,38 +24,45 @@
 #pragma mark - <StorylyExternalView>
 
 - (NSInteger)getDuration {
+    NSLog(@"<AdMost> getDuration: %@", @(_banner.bannerView.customNativeBannerDuration));
     return _banner ? (_banner.bannerView.customNativeBannerDuration * 1000) : 0;
 }
 
 - (NSURL *)getIcon {
+    NSLog(@"<AdMost> getIcon: %@", _banner.bannerView.customNativeBannerIconURL);
     return _banner ? _banner.bannerView.customNativeBannerIconURL : nil;
 }
 
 - (NSString *)getTitle {
+    NSLog(@"<AdMost> getTitle: %@", _banner.bannerView.customNativeBannerHeaderText);
     return _banner ? _banner.bannerView.customNativeBannerHeaderText : @"";
 }
 
 - (void)destroy {
-    ;;
+    NSLog(@"<AdMost> destroy");
+    [_banner pauseForCustomNativeBanner];
 }
 - (void)load {
-    ;;
+    NSLog(@"<AdMost> load");
 }
 
 - (void)pause {
+    NSLog(@"<AdMost> pause");
     [_banner pauseForCustomNativeBanner];
 }
 
 - (void)redirect {
+    NSLog(@"<AdMost> redirect");
     [_banner triggerCallToActionForCustomNativeBanner];
 }
 
 - (void)reset {
-//    [_banner playForCustomNativeBanner];
+    NSLog(@"<AdMost> reset");
 }
 
 - (void)resume {
-//    [_banner playForCustomNativeBanner];
+    NSLog(@"<AdMost> resume");
+    [_banner playForCustomNativeBanner];
 }
 
 #pragma mark - <AMRBannerDelegate>

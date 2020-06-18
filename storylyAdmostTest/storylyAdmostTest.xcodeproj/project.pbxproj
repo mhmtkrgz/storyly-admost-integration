@@ -10,7 +10,6 @@
 		4182653A2497A65800EEA99A /* StorylyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418265392497A65800EEA99A /* StorylyViewController.m */; };
 		418265402497E45300EEA99A /* AdMostStorylyAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4182653F2497E45300EEA99A /* AdMostStorylyAdView.m */; };
 		9E8453BE24869CDF00079600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453BD24869CDF00079600 /* AppDelegate.m */; };
-		9E8453C124869CDF00079600 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453C024869CDF00079600 /* SceneDelegate.m */; };
 		9E8453C424869CDF00079600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453C324869CDF00079600 /* ViewController.m */; };
 		9E8453C724869CDF00079600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453C524869CDF00079600 /* Main.storyboard */; };
 		9E8453C924869CE100079600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453C824869CE100079600 /* Assets.xcassets */; };
@@ -51,8 +50,6 @@
 		9E8453B924869CDF00079600 /* storylyAdmostTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storylyAdmostTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8453BC24869CDF00079600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E8453BD24869CDF00079600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9E8453BF24869CDF00079600 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		9E8453C024869CDF00079600 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		9E8453C224869CDF00079600 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9E8453C324869CDF00079600 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9E8453C624869CDF00079600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,8 +144,6 @@
 				9E8453FF2486A25800079600 /* AMRBannerAssets */,
 				9E8453BC24869CDF00079600 /* AppDelegate.h */,
 				9E8453BD24869CDF00079600 /* AppDelegate.m */,
-				9E8453BF24869CDF00079600 /* SceneDelegate.h */,
-				9E8453C024869CDF00079600 /* SceneDelegate.m */,
 				9E8453C224869CDF00079600 /* ViewController.h */,
 				9E8453C324869CDF00079600 /* ViewController.m */,
 				418265382497A65800EEA99A /* StorylyViewController.h */,
@@ -349,7 +344,6 @@
 				9E8453BE24869CDF00079600 /* AppDelegate.m in Sources */,
 				4182653A2497A65800EEA99A /* StorylyViewController.m in Sources */,
 				9E8453CF24869CE100079600 /* main.m in Sources */,
-				9E8453C124869CDF00079600 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
