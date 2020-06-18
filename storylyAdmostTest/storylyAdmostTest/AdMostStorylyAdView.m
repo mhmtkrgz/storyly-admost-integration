@@ -24,7 +24,7 @@
 #pragma mark - <StorylyExternalView>
 
 - (NSInteger)getDuration {
-    return _banner ? _banner.bannerView.customNativeBannerDuration : 0;
+    return _banner ? (_banner.bannerView.customNativeBannerDuration * 1000) : 0;
 }
 
 - (NSURL *)getIcon {
