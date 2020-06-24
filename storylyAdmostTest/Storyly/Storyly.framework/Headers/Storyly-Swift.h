@@ -295,7 +295,7 @@ SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewListener_")
 
 SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewProvider_")
 @protocol StorylyExternalViewProvider
-- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener;
+- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener :(CGRect)frame;
 @end
 
 @class StorylySegmentation;
@@ -358,6 +358,8 @@ SWIFT_CLASS_NAMED("StorylyView")
 - (void)presentWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 - (BOOL)setExternalData:(NSArray<NSDictionary *> * _Nullable)externalData SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -665,7 +667,7 @@ SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewListener_")
 
 SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewProvider_")
 @protocol StorylyExternalViewProvider
-- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener;
+- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener :(CGRect)frame;
 @end
 
 @class StorylySegmentation;
@@ -728,6 +730,8 @@ SWIFT_CLASS_NAMED("StorylyView")
 - (void)presentWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 - (BOOL)setExternalData:(NSArray<NSDictionary *> * _Nullable)externalData SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -1038,7 +1042,7 @@ SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewListener_")
 
 SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewProvider_")
 @protocol StorylyExternalViewProvider
-- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener;
+- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener :(CGRect)frame;
 @end
 
 @class StorylySegmentation;
@@ -1101,6 +1105,8 @@ SWIFT_CLASS_NAMED("StorylyView")
 - (void)presentWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 - (BOOL)setExternalData:(NSArray<NSDictionary *> * _Nullable)externalData SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -1408,7 +1414,7 @@ SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewListener_")
 
 SWIFT_PROTOCOL("_TtP7Storyly27StorylyExternalViewProvider_")
 @protocol StorylyExternalViewProvider
-- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener;
+- (void)onRequest:(id <StorylyExternalViewListener> _Nonnull)externalViewListener :(CGRect)frame;
 @end
 
 @class StorylySegmentation;
@@ -1471,6 +1477,8 @@ SWIFT_CLASS_NAMED("StorylyView")
 - (void)presentWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 - (BOOL)setExternalData:(NSArray<NSDictionary *> * _Nullable)externalData SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 

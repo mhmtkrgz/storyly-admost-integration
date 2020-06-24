@@ -42,6 +42,7 @@
     NSLog(@"<AdMost> destroy");
     [_banner pauseForCustomNativeBanner];
 }
+
 - (void)load {
     NSLog(@"<AdMost> load");
     [self addSubview:_banner.bannerView];

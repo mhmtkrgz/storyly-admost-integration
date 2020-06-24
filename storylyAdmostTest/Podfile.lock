@@ -1,8 +1,8 @@
 PODS:
-  - SDWebImage (5.8.0):
-    - SDWebImage/Core (= 5.8.0)
-  - SDWebImage/Core (5.8.0)
-  - Storyly (1.3.2):
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
+  - Storyly (1.5.0):
     - SDWebImage
 
 DEPENDENCIES:
@@ -14,9 +14,9 @@ SPEC REPOS:
     - Storyly
 
 SPEC CHECKSUMS:
-  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
-  Storyly: 6cbbb85bbafb9048c2a91532d07e46e7947d8f7e
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
+  Storyly: 43e4f8740bcc7c7c73cc971b79d46d09cdbc65ae
 
 PODFILE CHECKSUM: 5f8bc23c66687ae941982e7104ef51a6b89dbe16
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.1
