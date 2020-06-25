@@ -25,9 +25,9 @@
     _storylyView.storylyExternalViewProvider = self;
 }
 
-- (void)onRequest:(id<StorylyExternalViewListener> _Nonnull)externalViewListener {
+- (void)onRequest:(id<StorylyExternalViewListener> _Nonnull)externalViewListener :(CGRect)frame {
     NSLog(@"%@", @"onRequestWithExternalViewListener");
-    admostStorylyAdView = [[AdMostStorylyAdView alloc] initWithFrame:self.view.bounds];
+    admostStorylyAdView = [[AdMostStorylyAdView alloc] initWithFrame:frame];
     admostStorylyAdView.externalViewListener = externalViewListener;
     [admostStorylyAdView loadAd];
 }

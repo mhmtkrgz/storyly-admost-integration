@@ -74,7 +74,7 @@ extension StorylyView {
   @objc(setExternalData:) dynamic public func setExternalData(externalData: [Foundation.NSDictionary]?) -> Swift.Bool
 }
 @objc public protocol StorylyExternalViewProvider : AnyObject {
-  @objc(onRequest:) func onRequest(externalViewListener: Storyly.StorylyExternalViewListener)
+  @objc(onRequest::) func onRequest(externalViewListener: Storyly.StorylyExternalViewListener, frame: CoreGraphics.CGRect)
 }
 @objc public protocol StorylyExternalViewListener : AnyObject {
   @objc(onLoad:) func onLoad(externalView: Storyly.StorylyExternalView)

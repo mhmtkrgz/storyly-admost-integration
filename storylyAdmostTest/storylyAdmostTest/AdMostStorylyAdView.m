@@ -42,8 +42,15 @@
     NSLog(@"<AdMost> destroy");
     [_banner pauseForCustomNativeBanner];
 }
+
 - (void)load {
     NSLog(@"<AdMost> load");
+    [self addSubview:_banner.bannerView];
+    _banner.bannerView.translatesAutoresizingMaskIntoConstraints = FALSE;
+    [[_banner.bannerView.topAnchor constraintEqualToAnchor:self.topAnchor] setActive:TRUE];
+    [[_banner.bannerView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor] setActive:TRUE];
+    [[_banner.bannerView.leftAnchor constraintEqualToAnchor:self.leftAnchor] setActive:TRUE];
+    [[_banner.bannerView.rightAnchor constraintEqualToAnchor:self.rightAnchor] setActive:TRUE];
 }
 
 - (void)pause {
@@ -69,8 +76,6 @@
 
 - (void)didReceiveBanner:(AMRBanner *)banner {
     NSLog(@"Banner duration: %@", @(banner.bannerView.customNativeBannerDuration));
-    
-    [self addSubview:banner.bannerView];
     if (self.externalViewListener != nil) {
         [self.externalViewListener onLoad:self];
     }
