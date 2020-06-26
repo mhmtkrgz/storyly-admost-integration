@@ -33,10 +33,11 @@
 		9E8453F824869DB900079600 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F724869DB900079600 /* QuartzCore.framework */; };
 		9E8453FA24869DC300079600 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453F924869DC300079600 /* CoreGraphics.framework */; };
 		9E8453FC24869DC800079600 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8453FB24869DC800079600 /* CoreImage.framework */; };
-		9E8453FE24869F6B00079600 /* StorlyCustomBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8453FD24869F6B00079600 /* StorlyCustomBanner.xib */; };
 		9E8454032486A45D00079600 /* random-grey-variations.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454002486A45D00079600 /* random-grey-variations.png */; };
 		9E8454042486A45D00079600 /* amr-adchoices.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454012486A45D00079600 /* amr-adchoices.png */; };
 		9E8454052486A45D00079600 /* native_int_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E8454022486A45D00079600 /* native_int_close.png */; };
+		ED1FDB1A24A5E10E00F03987 /* arrow_up.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1FDB1924A5E10E00F03987 /* arrow_up.png */; };
+		ED1FDB1B24A5E42300F03987 /* StorlyCustomBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1FDB1D24A5E42300F03987 /* StorlyCustomBanner.xib */; };
 		F71DDCBC2CBAE81462346BAC /* Pods_storylyAdmostTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A35920BDDA365EF74F5332 /* Pods_storylyAdmostTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,10 +76,12 @@
 		9E8453F724869DB900079600 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9E8453F924869DC300079600 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9E8453FB24869DC800079600 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		9E8453FD24869F6B00079600 /* StorlyCustomBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StorlyCustomBanner.xib; sourceTree = "<group>"; };
 		9E8454002486A45D00079600 /* random-grey-variations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "random-grey-variations.png"; sourceTree = "<group>"; };
 		9E8454012486A45D00079600 /* amr-adchoices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amr-adchoices.png"; sourceTree = "<group>"; };
 		9E8454022486A45D00079600 /* native_int_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = native_int_close.png; sourceTree = "<group>"; };
+		ED1FDB1924A5E10E00F03987 /* arrow_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up.png; sourceTree = "<group>"; };
+		ED1FDB1C24A5E42300F03987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StorlyCustomBanner.xib; sourceTree = "<group>"; };
+		ED1FDB1F24A5E43200F03987 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StorlyCustomBanner.strings; sourceTree = "<group>"; };
 		F5A35920BDDA365EF74F5332 /* Pods_storylyAdmostTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_storylyAdmostTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -211,10 +214,11 @@
 		9E8453FF2486A25800079600 /* AMRBannerAssets */ = {
 			isa = PBXGroup;
 			children = (
+				ED1FDB1924A5E10E00F03987 /* arrow_up.png */,
 				9E8454012486A45D00079600 /* amr-adchoices.png */,
 				9E8454022486A45D00079600 /* native_int_close.png */,
 				9E8454002486A45D00079600 /* random-grey-variations.png */,
-				9E8453FD24869F6B00079600 /* StorlyCustomBanner.xib */,
+				ED1FDB1D24A5E42300F03987 /* StorlyCustomBanner.xib */,
 			);
 			path = AMRBannerAssets;
 			sourceTree = "<group>";
@@ -278,7 +282,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E8453FE24869F6B00079600 /* StorlyCustomBanner.xib in Resources */,
+				ED1FDB1A24A5E10E00F03987 /* arrow_up.png in Resources */,
+				ED1FDB1B24A5E42300F03987 /* StorlyCustomBanner.xib in Resources */,
 				9E8453DF24869D2500079600 /* AMRAdapterAdmostResources.bundle in Resources */,
 				9E8454052486A45D00079600 /* native_int_close.png in Resources */,
 				9E8453CC24869CE100079600 /* LaunchScreen.storyboard in Resources */,
@@ -364,6 +369,15 @@
 				9E8453CB24869CE100079600 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED1FDB1D24A5E42300F03987 /* StorlyCustomBanner.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED1FDB1C24A5E42300F03987 /* Base */,
+				ED1FDB1F24A5E43200F03987 /* en */,
+			);
+			name = StorlyCustomBanner.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
