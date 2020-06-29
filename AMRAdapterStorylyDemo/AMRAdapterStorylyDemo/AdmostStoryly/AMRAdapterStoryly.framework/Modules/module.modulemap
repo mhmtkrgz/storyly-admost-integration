@@ -1,0 +1,6 @@
+framework module AMRAdapterStoryly {
+  umbrella header "AMRAdapterStoryly.h"
+
+  export *
+  module * { export * }
+}

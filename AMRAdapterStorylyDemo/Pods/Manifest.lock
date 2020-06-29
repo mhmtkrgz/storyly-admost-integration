@@ -1,0 +1,41 @@
+PODS:
+  - AMRAdapterAdmost (1.3.1.1):
+    - AMRAdmostSDK (~> 1.0.9)
+    - AMRSDK (~> 1.4.35)
+  - AMRAdmostSDK (1.0.9):
+    - AMRSDK (~> 1.4.0)
+    - KokteylLog (~> 1.0)
+  - AMRSDK (1.4.38):
+    - KokteylLog (~> 1.0.8)
+  - KokteylLog (1.0.8)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
+  - Storyly (1.5.3):
+    - SDWebImage
+
+DEPENDENCIES:
+  - AMRAdapterAdmost (~> 1.3)
+  - AMRSDK (~> 1.4)
+  - Storyly (~> 1.5.0)
+
+SPEC REPOS:
+  trunk:
+    - AMRAdapterAdmost
+    - AMRAdmostSDK
+    - AMRSDK
+    - KokteylLog
+    - SDWebImage
+    - Storyly
+
+SPEC CHECKSUMS:
+  AMRAdapterAdmost: 4be7b2d66d50547f7dd8328bc555e90dbfcb7337
+  AMRAdmostSDK: 549fc61c4b2b3a87ee9a4ca360d6c0c613746500
+  AMRSDK: 2b9fd214e31793836428c2a6688718db7f2fa574
+  KokteylLog: 5e776068ae4a8456052e8df5d42f2bbd8c08c852
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
+  Storyly: 68a4ee03f2f32cc3eaed137e2f7dcddf319c23dd
+
+PODFILE CHECKSUM: eb9dd5d18bc92b4674edc07b7ce1488aabb8c5dc
+
+COCOAPODS: 1.9.3

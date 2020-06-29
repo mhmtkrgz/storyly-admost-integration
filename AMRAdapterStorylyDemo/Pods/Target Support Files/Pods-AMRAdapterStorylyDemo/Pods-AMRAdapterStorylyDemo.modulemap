@@ -1,0 +1,6 @@
+framework module Pods_AMRAdapterStorylyDemo {
+  umbrella header "Pods-AMRAdapterStorylyDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

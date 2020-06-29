@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jjf-ka-TmO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4on-bm-4UR">
+            <objects>
+                <viewController id="jjf-ka-TmO" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QVm-RX-pCU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-gb-dxm" customClass="StorylyView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="aDL-Wv-pXE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZgL-0E-fWs" firstAttribute="trailing" secondItem="gDL-gb-dxm" secondAttribute="trailing" id="6un-93-qfg"/>
+                            <constraint firstItem="gDL-gb-dxm" firstAttribute="leading" secondItem="ZgL-0E-fWs" secondAttribute="leading" id="RcB-la-rCK"/>
+                            <constraint firstItem="gDL-gb-dxm" firstAttribute="top" secondItem="ZgL-0E-fWs" secondAttribute="top" id="vzn-Mm-ZbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZgL-0E-fWs"/>
+                    </view>
+                    <connections>
+                        <outlet property="storylyView" destination="gDL-gb-dxm" id="fTO-fq-pWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Zy-dV-MRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-413" y="144"/>
+        </scene>
+    </scenes>
+</document>
